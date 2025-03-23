@@ -13,14 +13,13 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Install Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '18'
-
-      - name: Install Newman
-        run: npm install -g newman
-
-      - name: Run Postman Collection
+      - name: Install Postman CLI
         run: |
-          newman run "Assignment_#5.postman_collection.json"
+          curl -o- "https://dl-cli.pstmn.io/install/linux64.sh" | sh
+
+      - name: Run Postman Collection with Postman CLI
+        env:
+          POSTMAN_API_KEY: ${{ secrets.POSTMAN_API_KEY }}
+        run: |
+          postman login --with-api-key "$POSTMAN_API_KEY"
+          postman collection run "Assignment_#5.postman_collection.json"
