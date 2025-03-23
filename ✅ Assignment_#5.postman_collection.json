@@ -1,7 +1,7 @@
 {
 	"info": {
 		"_postman_id": "a76a196e-eb1b-499b-8e12-ce8b16d08f53",
-		"name": "✅ Assignment #5",
+		"name": "✅ Assignment_#5",
 		"description": "## Instructions for Assignment #5\n\n1. **Get the challenge:** Fork the parent collection to your own public workspace.\n    \n2. **Read the instructions:** You will find the tasks you need to complete below.\n    \n3. **Verify your solution:** Select the second folder `Check your solution` and follow the instructions in the documentation to validate your solution.\n    \n\n## Tasks\n\n### Task 1\n\nCreate a public GitHub project and configure a GitHub Actions workflow. Ensure the workflow is stored in the following location:\n\n```\n.github/workflows/postman.yml\n\n ```\n\n### Task 2\n\nOnce you have created the Postman workflow, ensure that the Postman collection run is successful.",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "29474944"
