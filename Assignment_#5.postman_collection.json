@@ -123,7 +123,7 @@
 	"variable": [
 		{
 			"key": "githubProjectUrl",
-			"value": "LINK TO YOUR PROJECT",
+			"value": "https://github.com/Fareed-Uddin-Khan/api_testing",
 			"type": "string"
 		}
 	]
